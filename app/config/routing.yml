@@ -1,3 +1,7 @@
+oc_core:
+    resource: "@OCCoreBundle/Resources/config/routing.yml"
+    prefix:   /
+
 # app/config/routing.yml
 
 oc_platform:

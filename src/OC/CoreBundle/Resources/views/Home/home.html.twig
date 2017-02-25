@@ -1,0 +1,13 @@
+{% extends "OCCoreBundle::layout.html.twig" %}
+
+
+{% block body %}
+
+<h1>Page d'accueil</h1>
+
+{# On affiche tous les messages flash dont le nom est « info » #}
+{% for message in app.session.flashbag.get('info') %}
+<p class="alert alert-info">Message flash : {{ message }}</p>
+{% endfor %}
+
+{% endblock %}
